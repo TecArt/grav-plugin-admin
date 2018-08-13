@@ -708,7 +708,7 @@ class AdminController extends AdminBaseController
 
         if ($obj) {
             // Event to manipulate data before saving the object
-            $this->grav->fireEvent('onAdminSave', new Event(['object' => &$obj]));
+            $this->grav->fireEvent('onAdminSave', new Event(['object' => &$obj, 'data' => $data]));
             $obj->save($reorder);
             $this->admin->setMessage($this->admin->translate('PLUGIN_ADMIN.SUCCESSFULLY_SAVED'), 'info');
             $this->grav->fireEvent('onAdminAfterSave', new Event(['object' => $obj]));
