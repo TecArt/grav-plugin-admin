@@ -1,15 +1,15 @@
-name: Admin Panel
+name: TecArt Admin Panel
 version: 1.8.20
 description: Adds an advanced administration panel to manage your site
 icon: empire
 author:
-  name: Team Grav
-  email: devs@getgrav.org
-  url: http://getgrav.org
-homepage: https://github.com/getgrav/grav-plugin-admin
+    name: Team Grav & TecArt
+    email: technik@tecart.de
+    url: http://tecart.de
+homepage: https://github.com/TecArt/grav-plugin-admin
 keywords: admin, plugin, manager, panel
-bugs: https://github.com/getgrav/grav-plugin-admin/issues
-docs: https://github.com/getgrav/grav-plugin-admin/blob/develop/README.md
+bugs: https://github.com/TecArt/grav-plugin-admin/issues
+docs: https://github.com/TecArt/grav-plugin-admin/blob/develop/README.md
 license: MIT
 
 dependencies:
@@ -162,7 +162,7 @@ form:
       label: Parents Levels
       size: small
       help: The number of levels to show in parent select list
-    
+
     pages.show_modular:
       type: toggle
       label: Modular parents
